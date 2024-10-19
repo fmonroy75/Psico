@@ -36,19 +36,50 @@
             color: #adb5bd;
         }
        /* Background image styling */
-       .quienes-somos {
-        background-image: url('https://via.placeholder.com/1500x800'); /* Cambia esta URL por la imagen de fondo que prefieras */
+       /* .quienes-somos {
+        background-image: url('https://via.placeholder.com/1500x800'); 
         background-size: cover;
         background-position: center;
         padding: 100px 0;
         color: white;
-    }
+    } */
     .quienes-somos .carousel {
         width: 100%;
         max-width: 400px;
     }
-    .quienes-somos .content-text {
-        background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para el texto */
+    .quienes-soy .content-text {
+        background: rgba(255, 255, 255, 0.6); /* Fondo semitransparente para el texto */
         padding: 20px;
         border-radius: 10px;
     }
+    /* Estilo para redondear las esquinas de las imágenes del carrusel */
+    .quienes-soy .carousel-item img {
+        border-radius: 15px; 
+    }
+/*---------------------------------------------------*/
+/* Logo del navbar */
+.navbar-logo img {
+    height: 38px; /* Ajusta este valor según el tamaño deseado */
+    width: auto;
+    object-fit: cover;
+}
+
+.diphylleia-regular {
+    font-family: "Diphylleia", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilo para el navbar */
+.navbar {
+    background-color: #001b35; /* Cambia este valor por el color que prefieras */
+}
+
+/* Imagen de Fondo del sitio*/
+
+body {
+    background-image: url('../img/background.jpeg'); /* Cambia esta URL por la imagen que prefieras */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
