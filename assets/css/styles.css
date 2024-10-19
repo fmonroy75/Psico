@@ -1,0 +1,54 @@
+        /* Hero Section styling */
+        .hero {
+            background-image: url('https://via.placeholder.com/1500x700'); /* Cambia esta URL por la imagen que prefieras */
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        /* Servicios styling */
+        .service-card {
+            border: none;
+            background-color: #f8f9fa;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+
+        footer a {
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #adb5bd;
+        }
+       /* Background image styling */
+       .quienes-somos {
+        background-image: url('https://via.placeholder.com/1500x800'); /* Cambia esta URL por la imagen de fondo que prefieras */
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        color: white;
+    }
+    .quienes-somos .carousel {
+        width: 100%;
+        max-width: 400px;
+    }
+    .quienes-somos .content-text {
+        background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para el texto */
+        padding: 20px;
+        border-radius: 10px;
+    }
