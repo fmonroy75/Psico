@@ -1,14 +1,13 @@
         /* Hero Section styling */
-        .hero {
-            background-image: url('https://via.placeholder.com/1500x700'); /* Cambia esta URL por la imagen que prefieras */
-            background-size: cover;
+        /* .hero {
+            background-image: url('https://via.placeholder.com/1500x700');
             background-position: center;
             height: 600px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
-        }
+        } */
 
         /* Servicios styling */
         .service-card {
