@@ -94,3 +94,7 @@ body {
     font-size: 20px;
   }
   
+/* Agregar padding-top a la clase rrss-quien-soy */
+.rrss-quien-soy {
+    padding-top: 20px; /* Ajusta el valor según sea necesario */
+}
