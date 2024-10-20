@@ -52,10 +52,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quién Soy</a>
+                        <a class="nav-link" href="#quien-soy">Quién Soy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Terapias</a>
+                        <a class="nav-link" href="#terapias">Terapias</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Otros Servicios</a>
@@ -64,10 +64,10 @@
                         <a class="nav-link" href="#">Auto Cuidado Equipos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Más Información</a>
+                        <a class="nav-link" href="mas_informacion.html">Más Información</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -169,7 +169,7 @@
     </div>
     </section>
     <!-- Servicios Section -->
-    <section class="servicios" class="py-5">
+    <section class="terapias" class="py-5">
     <div class="container my-5">
         <h2 class="text-center mb-4">Nuestros Servicios</h2>
         <div class="row">
@@ -225,10 +225,10 @@
     </div>
     </section>
     <!-- Footer -->
-    <footer class="text-center py-4">
+    <!--<footer class="text-center py-4">
         <div class="container">
             <div class="row footer-bottom d-flex justify-content-between align-items-center">
-            <!-- Copyright e imagen a la izquierda -->
+            <!- - Copyright e imagen a la izquierda - ->
             <div class="col-lg-8 col-sm-12 d-flex align-items-center">
                 <p class="footer-text m-0 text-white">
                 Copyright &copy;
@@ -242,8 +242,20 @@
             </div>
             </div>
         </div>
-    </footer>
-
+    </footer>-->
+    <section id="include-footer"></section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('include-footer').innerHTML = data;
+            // Llama a una función para ejecutar cualquier script dentro de footer.html
+            // Establecer el año actual después de incluir el footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+</script>
