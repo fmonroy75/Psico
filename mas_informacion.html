@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Más información sobre cómo agendar una cita con el psicólogo Alex Oyarzún y servicios para empresas.">
+    <meta name="keywords" content="agendar cita, atención a empresas, psicología, Alex Oyarzún">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-48x48.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Más Información - Psicólogo Alex Oyarzún</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <div class="navbar-logo">
+                <a href="#"><img src="assets/img/logo.png" alt="Logo" class="img-fluid"/></a>
+            </div>
+            <a class="navbar-brand diphylleia-regular" href="#">Psicólogo Alex Oyarzún</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#quien-soy">Quién Soy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#terapias">Terapias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Otros Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Auto Cuidado Equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="mas_informacion.html">Más Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Sección de Agendar Cita -->
+    <section class="py-5" id="agendar-cita">
+        <div class="container">
+            <h2 class="text-center mb-4">¿Cómo Agendar una Cita?</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Para agendar una cita con el psicólogo Alex Oyarzún, puedes seguir estos sencillos pasos:
+                    </p>
+                    <ul>
+                        <li>1. Visita nuestro sitio web y completa el formulario de contacto.</li>
+                        <li>2. Selecciona el tipo de terapia que deseas y la fecha preferida.</li>
+                        <li>3. Te contactaremos para confirmar tu cita.</li>
+                        <li>4. Recibirás un recordatorio el día anterior a tu cita.</li>
+                    </ul>
+                    <p>
+                        Si prefieres, también puedes agendar tu cita llamando al <strong>+569 7610 6183</strong> o enviando un correo a <strong>info@alexoyarzaun.cl</strong>.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/400" class="img-fluid rounded" alt="Agendar Cita">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Atención a Empresas -->
+    <section class="py-5" id="atencion-empresas">
+        <div class="container">
+            <h2 class="text-center mb-4">Atención a Empresas</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Ofrecemos servicios de atención psicológica para empresas que buscan apoyar el bienestar de sus empleados. Nuestros programas incluyen:
+                    </p>
+                    <ul>
+                        <li>1. Talleres de manejo del estrés.</li>
+                        <li>2. Sesiones de terapia grupal.</li>
+                        <li>3. Evaluaciones psicológicas.</li>
+                        <li>4. Consultoría en salud mental organizacional.</li>
+                    </ul>
+                    <p>
+                        Contáctanos para más información sobre cómo podemos ayudar a tu empresa a cuidar la salud emocional de su equipo.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/400" class="img-fluid rounded" alt="Atención a Empresas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="include-footer"></section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('include-footer').innerHTML = data;
+            // Llama a una función para ejecutar cualquier script dentro de footer.html
+            // Establecer el año actual después de incluir el footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+</script>
