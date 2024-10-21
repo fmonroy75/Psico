@@ -72,8 +72,9 @@
 }
 
 /* Estilo para el navbar */
+
 .navbar {
-    background-color: #001b35; /* Cambia este valor por el color que prefieras */
+    background: linear-gradient(to right, white, #001b35); /* Degradado de blanco al color actual */
 }
 
 /* Imagen de Fondo del sitio*/
@@ -98,3 +99,30 @@ body {
 .rrss-quien-soy {
     padding-top: 20px; /* Ajusta el valor según sea necesario */
 }
+
+/*Texto de hero section*/
+.carousel-item {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .carousel-item.active img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
