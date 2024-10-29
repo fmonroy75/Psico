@@ -57,6 +57,9 @@
         height: 500px;
         width: auto;
     }
+#img_carrousel_quiensoy{
+    max-height: fit-content;
+}
 /*---------------------------------------------------*/
 /* Logo del navbar */
 .navbar-logo img {
@@ -113,18 +116,18 @@ body {
     background-repeat: no-repeat;
   }
   
-  /* .carousel-item img {
+  .carousel-item img {
     object-fit: cover;
     object-position: center;
     height: 100%;
     width: 100%;
   }
-  
+
   .carousel-item.active img {
     display: flex;
     align-items: center;
     justify-content: center;
-  } */
+  } 
   .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
@@ -152,3 +155,5 @@ body {
     font-family: 'Overlock', sans-serif;
     font-weight: bold;
     }
+
+
