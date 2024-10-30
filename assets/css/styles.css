@@ -80,6 +80,10 @@
 
 /* Estilo para el navbar */
 
+#navbarNav .nav-item .nav-link {
+    text-align: right;
+}
+
 .navbar {
     background: linear-gradient(to right, white, #001b35); /* Degradado de blanco al color actual */
 }
@@ -159,5 +163,9 @@ body {
     font-weight: bold;
         }
 
+/*------------------------------*/
 
+#terapias h2 {
+    padding-bottom: 5%;
+}
 
