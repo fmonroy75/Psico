@@ -138,7 +138,9 @@ body {
   /*----------------------*/
   /*cards de tratamientos*/
 
-#card_tratamiento {
+ #card_tratamiento {
+    margin-left: 2%;
+    margin-right: 2%;
     width: 190px;
     height: 100px;
     border-radius: 50px;
@@ -148,12 +150,14 @@ body {
   }
 
 #text_tratamiento_cards{
+    max-width:fit-content;
     padding-left: 3%;
     padding-right: 3%;
-    padding-bottom: 3%;
-    padding-top:3%;
+    padding-bottom: 1%;
+    padding-top:1%;
     font-family: 'Overlock', sans-serif;
     font-weight: bold;
-    }
+        }
+
 
 
